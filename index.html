@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+    <body>
+
+        <div class="header">
+	    <h1>THE CODE REVIEW</h1>
+	    </div>
+	    <form action="index.html" method="post">
+            
+   
+		    <div class="section1">
+		    <h2>Sign Up for our Newsletter</h2>
+		    <p>Get the latest news on how your code is doing right in your inbox</p>
+		    </div>
+
+            <div class="section2">
+		    <fieldset>
+		    <legend>Contact Information</legend>
+
+                <div class="row">
+		    	<span class="label"><label for="name"> Full Name</label></span>
+		        <span class="formw"><input type="text" id="name" name="user_name" placeholder="Required"></span>
+                </div>
+
+                <div class="row">
+		        <span class="label"><label for="name">Email Address</label></span>
+		        <span class="formw"><input type="email" id="mail" name="user_email" placeholder="Required"></span>
+                </div>
+ 
+                <div class="row">
+		        <span class="label"><label for="name">Phone Number</label></span>
+		        <span class="formw"><input type="tel" id="phone" name="user_phone" placeholder="Required"></span>
+		        </div>
+
+                <div class="row">
+		        <span class="label"><label for="address">Street Address</label></span>
+		        <span class="formw"><input type="text" id="address" name="user_address"></span>
+		        </div>
+
+                <div class="row">
+		        <span class="label"><label for="city">City</label></span>
+		        <span class="formw"><input type="text" id="city" name="user_city"></span>
+		        </div>
+
+                <div class="row">
+		        <span class="label"><label for="state">State</label></span>
+		        <span class="formw"><select id="state" name="user_state" >
+		            <optgroup label="Choose State">
+                    <option value="state_qld">QLD</option>
+                    <option value="state_nws">NWS</option>
+                    <option value="state_victoria">Victoria</option>
+                    </optgroup>
+
+                </select></span>
+                </div>
+       
+                <div class="row">
+		        <span class="label"><label for="zip">Zip Code</label></span>
+		        <span class="formw"><input type="text" id="zip" name="user_zip">
+		        </span>
+		        </div>
+		        
+            </fieldset>
+            </div>
+
+    <div class="section2">
+    <fieldset>   
+    <legend>Newsletter</legend>
+
+    <label class="newsletter">Select the newsletter you would like to receive</label>
+    
+    <input type="checkbox" id="NEWS_html" value="NEWS_html" name="user_newsletter" class="regular-checkbox"><label class="light" for="NEWS_html">HTML News</label><br>
+    <input type="checkbox" id="NEWS_CSS" value="NEWS_CSS" name="user_newsletter" class="regular-checkbox"><label class="light" for="NEWS_CSS">CSS News</label><br>
+    
+    <input type="checkbox" id="NEWS_Javascript" value="NEWS_Javasrcipt" name="user_newsletter" class="regular-checkbox"><label class="light" for="NEWS_Javascript">Javascript News</label>
+
+                    
+
+
+    <label class="newsletter">Newsletter format</label>
+    <input type="radio" id="format_html" value="format_html" name="user_newsformat" class="regular-radio"><label for="format_html" class="light">HTML </label><br>
+
+    <input type="radio" id="format_plain" value="format_plain" name="user_newsformat" class="regular-radio"><label for="format_plain" class="light">Plain Text </label>
+
+    <label class="newsletter" for="other_topic">Other topics you'd like to hear about</label>
+    <textarea class="newsletter" id="other_topic" name="other_topic"></textarea>
+    </fieldset>
+    </div>
+
+    <button type="submit">Sign Up </button>
+
+    </form>
+
+    <p class="copyright">Copyright The Code Review</p>
+    </body>
+</html>    
