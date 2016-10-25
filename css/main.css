@@ -54,7 +54,7 @@ p{
 	border-top:solid 3px  #2d3945;
 	min-height: 1px;
 	padding-top: 2em;
-    margin-top: 5px;
+  margin-top: 5px;
 	
 
 }
@@ -159,7 +159,7 @@ legend {
 
 textarea {
 	height: 150px;
-    padding: 12px 20px;
+  padding: 12px 20px;
 }
 
 .copyright {
@@ -169,13 +169,19 @@ textarea {
 
 }
 
-/*placeholder*/
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+
+/*placeholder-Chrome/Opera/Safari */
+::-webkit-input-placeholder { 
      text-align: right;
+     padding-right: 5px;
      font-style: italic;
      font-family: 'Merriweather', serif;
+     width: 100%;
 }
+
+
+
 
 /* Ckeckbox style*/
 
@@ -183,11 +189,12 @@ textarea {
 	-webkit-appearance: none;
 	background-color: #fafafa;
 	border: 1px solid #cacece;
-	/*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);*/
-	padding: 9px;
+	padding:9px;
 	border-radius: 3px;
 	display: inline-block;
 	position: relative;
+  vertical-align: middle;
+  margin-top:0px; 
 }
 
 
@@ -204,9 +211,9 @@ textarea {
 	color: #2d3945;
 	top: 0px;
 	left: 0px;
-    width:18px;
-    text-align:center;  
-    border:solid 1.5px #2d3945 ;
+  width:18px;
+  text-align:center;  
+  border:solid 1.5px #2d3945 ;
 }
 
 /*radio input style*/
@@ -218,6 +225,8 @@ textarea {
 	border-radius: 50px;
 	display: inline-block;
 	position: relative;
+  vertical-align: middle;
+  margin-top:0px; 
 }
 
 .regular-radio:checked:after {
@@ -271,12 +280,15 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
-input[type="tel"] {
-	padding-right: 200px;
+input[type="tel"],
+select {
+	width:380px;
 }
 
-select {
-	width: 414px;
+
+
+
+
 }
 
  
